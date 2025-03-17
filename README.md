@@ -1,4 +1,8 @@
-# Horizontal RecyclerView
+# Custom RecyclerView
+
+The library presents several options for the RecyclerView
+
+# 1. Horizontal RecyclerView
 
 ![GitHub](https://badgen.net/static/license/GPL3/orange)
 
@@ -6,15 +10,15 @@ A nested RecyclerView refers to the use of a RecyclerView inside another Recycle
 This layout can be observed in various applications, such as the Play Store, where the parent RecyclerView is oriented 
 vertically, while the child RecyclerViews are oriented horizontally.
 
-## Demo application
+### Demo application
 You can download this project and run on Android Studio
 
-## Setup
+### Setup
 
 Add module "hrv" in your project.
 it's temporary for sure.
 
-## Usage
+### Usage
 
 For an example see [MainActivity](app/src/main/java/ru/zettatech/demo/MainActivity.kt) in demo project.
 

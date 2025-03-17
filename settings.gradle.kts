@@ -24,3 +24,4 @@ dependencyResolutionManagement {
 rootProject.name = "CustomRecyclerView"
 include(":app")
 include(":hrv")
+include(":grv")

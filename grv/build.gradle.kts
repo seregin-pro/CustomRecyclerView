@@ -4,15 +4,14 @@ plugins {
 }
 
 android {
-    namespace = "ru.zettatech.hrv"
-    compileSdk = 35
+    namespace = "ru.zettatech.grv"
+    compileSdk = 34
 
     defaultConfig {
-
         minSdk = 31
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
-        targetSdk = 35
     }
 
     buildTypes {
@@ -25,11 +24,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_21
-        targetCompatibility = JavaVersion.VERSION_21
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "21"
+        jvmTarget = "1.8"
     }
 }
 
