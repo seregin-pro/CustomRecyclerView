@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Custom RecyclerView</string>
+    <string name="title_horizontal">Horizontal RecyclerView</string>
+    <string name="title_grid">Grid RecyclerView</string>
 </resources>

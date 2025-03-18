@@ -30,7 +30,7 @@ class DBHelper private constructor(context: Context) :
         @Synchronized
         fun getInstance(context: Context): DBHelper? {
             if (instance == null) {
-                instance = DBHelper(context.applicationContext)
+                instance = DBHelper(context)
             }
 
             return instance

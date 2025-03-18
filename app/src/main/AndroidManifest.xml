@@ -20,6 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".HorizontalActivity"
+            android:label="@string/title_horizontal" />
     </application>
 
 </manifest>

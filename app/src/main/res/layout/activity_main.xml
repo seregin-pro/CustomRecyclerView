@@ -8,27 +8,25 @@
     android:background="@android:color/white"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_view"
+    <Button
+        android:id="@+id/button_hrv"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        app:titleTextColor="@android:color/white"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_height="wrap_content"
+        android:text="@string/title_horizontal"
+        android:layout_margin="@dimen/activity_vertical_margin"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_grv"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/parent"
+    <Button
+        android:id="@+id/button_grv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="?attr/actionBarSize"
-        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/title_grid"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        app:layout_constraintTop_toBottomOf="@+id/button_hrv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
