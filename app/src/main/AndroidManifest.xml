@@ -23,6 +23,9 @@
         <activity
             android:name=".HorizontalActivity"
             android:label="@string/title_horizontal" />
+        <activity
+            android:name=".GridActivity"
+            android:label="@string/title_grid" />
     </application>
 
 </manifest>

@@ -28,5 +28,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, HorizontalActivity::class.java)
             startActivity(intent)
         }
+
+        binding.buttonGrv.setOnClickListener {
+            val intent = Intent(this, GridActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

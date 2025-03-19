@@ -1,15 +1,13 @@
-package ru.zettatech.hrv.adapter
+package ru.zettatech.grv.adapter
 
-import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
-import ru.zettatech.hrv.R
-import ru.zettatech.hrv.item.ParentItem
+import ru.zettatech.grv.R
+import ru.zettatech.grv.item.ParentItem
 
 class ParentAdapter(
     private val parentItemList: List<ParentItem>,
@@ -30,7 +28,7 @@ class ParentAdapter(
 
         init {
             parentId = view.findViewById(R.id.parent_id)
-            title = view.findViewById(R.id.name)
+            title = view.findViewById(R.id.nameView)
             forward = view.findViewById(R.id.forward)
             child = view.findViewById(R.id.child)
         }
@@ -38,7 +36,7 @@ class ParentAdapter(
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(viewGroup.context)
-            .inflate(R.layout.item_horizontal_parent, viewGroup, false)
+            .inflate(R.layout.item_grid_parent, viewGroup, false)
 
         return ViewHolder(view)
     }
@@ -48,12 +46,6 @@ class ParentAdapter(
 
         viewHolder.parentId.text = parenItem.getParentId().toString()
         viewHolder.title.text = parenItem.getTitle()
-
-        // Set Item Decoration
-        val itemDecoration = DividerItemDecoration(viewHolder.child.context, DividerItemDecoration.HORIZONTAL)
-        val drawable: Drawable = viewHolder.child.context.getDrawable(R.drawable.cardview_divider) as Drawable
-        itemDecoration.setDrawable(drawable)
-        viewHolder.child.addItemDecoration(itemDecoration)
 
         val childItemAdapter = ChildAdapter(parenItem.getChildItemList(), onChildItemClickListener)
         viewHolder.child.adapter = childItemAdapter

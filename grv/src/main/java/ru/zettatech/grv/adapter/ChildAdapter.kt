@@ -1,4 +1,4 @@
-package ru.zettatech.hrv.adapter
+package ru.zettatech.grv.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import ru.zettatech.hrv.R
-import ru.zettatech.hrv.item.ChildItem
+import ru.zettatech.grv.R
+import ru.zettatech.grv.item.ChildItem
 
 class ChildAdapter (private val childItemList: List<ChildItem>, private val onClickListener: OnChildItemClickListener) :
 RecyclerView.Adapter<ChildAdapter.ViewHolder>() {
@@ -21,14 +21,14 @@ RecyclerView.Adapter<ChildAdapter.ViewHolder>() {
         val title: TextView
 
         init {
-            image = view.findViewById(R.id.image)
-            title = view.findViewById(R.id.name)
+            image = view.findViewById(R.id.imageView)
+            title = view.findViewById(R.id.nameView)
         }
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(viewGroup.context)
-            .inflate(R.layout.item_horizontal_child, viewGroup, false)
+            .inflate(R.layout.item_grid_child, viewGroup, false)
 
         return ViewHolder(view)
     }

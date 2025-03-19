@@ -6,21 +6,21 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
 import ru.zettatech.demo.category.Category
 import ru.zettatech.demo.constant.Constant
-import ru.zettatech.demo.databinding.ActivityHorizontalBinding
+import ru.zettatech.demo.databinding.ActivityGridBinding
 import ru.zettatech.demo.db.DBHelper
-import ru.zettatech.hrv.adapter.ChildAdapter
-import ru.zettatech.hrv.adapter.ParentAdapter
-import ru.zettatech.hrv.item.ChildItem
-import ru.zettatech.hrv.item.ParentItem
+import ru.zettatech.grv.adapter.ChildAdapter
+import ru.zettatech.grv.adapter.ParentAdapter
+import ru.zettatech.grv.item.ChildItem
+import ru.zettatech.grv.item.ParentItem
 import java.lang.reflect.Field
 
-class HorizontalActivity : AppCompatActivity() {
+class GridActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityHorizontalBinding
+    private lateinit var binding: ActivityGridBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityHorizontalBinding.inflate(layoutInflater)
+        binding = ActivityGridBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val activity = this
