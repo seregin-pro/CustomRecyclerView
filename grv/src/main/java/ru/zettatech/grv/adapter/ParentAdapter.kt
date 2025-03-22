@@ -42,22 +42,22 @@ class ParentAdapter(
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-        val parenItem: ParentItem = parentItemList.get(position)
+        val parentItem: ParentItem = parentItemList.get(position)
 
-        viewHolder.parentId.text = parenItem.getParentId().toString()
-        viewHolder.title.text = parenItem.getTitle()
+        viewHolder.parentId.text = parentItem.getParentId().toString()
+        viewHolder.title.text = parentItem.getTitle()
 
-        val childItemAdapter = ChildAdapter(parenItem.getChildItemList(), onChildItemClickListener)
+        val childItemAdapter = ChildAdapter(parentItem.getChildItemList(), onChildItemClickListener)
         viewHolder.child.adapter = childItemAdapter
 
         // Click listener for the parent item
         viewHolder.itemView.setOnClickListener {
-            onParentItemClickListener.onParentItemClick(parenItem, position)
+            onParentItemClickListener.onParentItemClick(parentItem, position)
         }
 
         // Click listener for the forward button
         viewHolder.forward.setOnClickListener {
-            onParentItemClickListener.onForwardClick(parenItem, position)
+            onParentItemClickListener.onForwardClick(parentItem, position)
         }
     }
 

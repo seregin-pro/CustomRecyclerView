@@ -10,7 +10,10 @@ class DumpData {
         val parent: String =
             "(1, 0, 'animals.png', 'Animals', 'List of Animals', 0, 1, '2024-01-05 21:49:43', '2024-12-20 02:14:42'), " +
             "(2, 0, 'cities.png', 'Cities', 'List of Cities', 0, 1, '2024-01-05 21:49:43', '2024-12-20 02:14:42'), " +
-            "(3, 0, 'planets.png', 'Planets', 'List of Planets', 0, 1, '2024-01-05 21:49:43', '2024-12-20 02:14:42'), "
+            "(3, 0, 'planets.png', 'Planets', 'List of Planets', 0, 1, '2024-01-05 21:49:43', '2024-12-20 02:14:42'), " +
+            "(21, 0, 'countries.png', 'Countries', 'List of Countries', 0, 1, '2024-01-05 21:49:43', '2024-12-20 02:14:42'), " +
+            "(22, 0, 'rivers.png', 'Rivers', 'List of Rivers', 0, 1, '2024-01-05 21:49:43', '2024-12-20 02:14:42'), " +
+            "(23, 0, 'mountains.png', 'Mountains', 'List of Mountains', 0, 1, '2024-01-05 21:49:43', '2024-12-20 02:14:42'), "
 
         val child: String =
             "(4, 1, 'cat.png', 'Cat', 'This is very happy cat', 0, 1, '2024-01-05 21:49:43', '2024-12-20 02:14:42'), " +
@@ -20,6 +23,11 @@ class DumpData {
             "(8, 1, 'spider.png', 'Spider', 'Dangerous spider', 0, 1, '2024-01-05 21:49:43', '2024-12-20 02:14:42'), " +
             "(19, 1, 'horse.png', 'Horse', 'Strong horse', 0, 1, '2024-01-05 21:49:43', '2024-12-20 02:14:42'), " +
             "(20, 1, 'lion.png', 'Lion', 'King of animals', 0, 1, '2024-01-05 21:49:43', '2024-12-20 02:14:42'), " +
+            "(24, 1, 'bobcat.png', 'Bobcat', 'Description Bobcat', 0, 1, '2024-01-05 21:49:43', '2024-12-20 02:14:42'), " +
+            "(25, 1, 'monkey.png', 'Lion', 'Description Monkey', 0, 1, '2024-01-05 21:49:43', '2024-12-20 02:14:42'), " +
+            "(26, 1, 'seal.png', 'Seal', 'Description Seal', 0, 1, '2024-01-05 21:49:43', '2024-12-20 02:14:42'), " +
+            "(27, 1, 'lion.png', 'Lion', 'Description Bobcat', 0, 1, '2024-01-05 21:49:43', '2024-12-20 02:14:42'), " +
+            "(28, 1, 'lion.png', 'Lion', 'Description Bobcat', 0, 1, '2024-01-05 21:49:43', '2024-12-20 02:14:42'), " +
 
             "(9, 2, 'moscow.png', 'Moscow', 'This is Moscow', 0, 1, '2024-01-05 21:49:43', '2024-12-20 02:14:42'), " +
             "(10, 2, 'tokio.png', 'Tokio', 'This is Tokio', 0, 1, '2024-01-05 21:49:43', '2024-12-20 02:14:42'), " +
