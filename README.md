@@ -1,14 +1,14 @@
 # Custom RecyclerView
 
-The library presents several options for the RecyclerView
-
-# 1. Horizontal RecyclerView
-
 ![GitHub](https://badgen.net/static/license/GPL3/orange)
 
 A nested RecyclerView refers to the use of a RecyclerView inside another RecyclerView. 
-This layout can be observed in various applications, such as the Play Store, where the parent RecyclerView is oriented 
-vertically, while the child RecyclerViews are oriented horizontally.
+This layout can be observed in various applications.
+
+The library presents several options for the RecyclerView:
+
+1. Horizontal RecyclerView
+2. Grid RecyclerView
 
 ### Demo application
 You can download this project and run on Android Studio
